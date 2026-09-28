@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "node_id": "root",
+      "parent_id": null,
+      "classes": [],
+      "attrs": {}
+    },
+    {
+      "node_id": "app",
+      "parent_id": "root",
+      "classes": [
+        "app"
+      ],
+      "attrs": {}
+    },
+    {
+      "node_id": "shell",
+      "parent_id": "app",
+      "classes": [
+        "shell"
+      ],
+      "attrs": {}
+    },
+    {
+      "node_id": "cards",
+      "parent_id": "shell",
+      "classes": [
+        "cards"
+      ],
+      "attrs": {}
+    }
+  ]
+}

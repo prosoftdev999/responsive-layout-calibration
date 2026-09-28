@@ -1,0 +1,130 @@
+{
+  "domains": {
+    "base_card_inner_pad": {
+      "max": 30,
+      "min": 6
+    },
+    "base_card_min": {
+      "max": 310,
+      "min": 170
+    },
+    "base_char_factor_milli": {
+      "max": 640,
+      "min": 460
+    },
+    "base_compact_pad": {
+      "max": 48,
+      "min": 8
+    },
+    "base_content_cap": {
+      "max": 1480,
+      "min": 960
+    },
+    "base_grid_gap": {
+      "max": 40,
+      "min": 4
+    },
+    "base_sidebar_width": {
+      "max": 360,
+      "min": 180
+    },
+    "base_standard_breakpoint": {
+      "max": 860,
+      "min": 640
+    },
+    "base_standard_pad": {
+      "max": 56,
+      "min": 8
+    },
+    "base_wide_breakpoint": {
+      "max": 1320,
+      "min": 980
+    },
+    "base_wide_pad": {
+      "max": 64,
+      "min": 8
+    },
+    "beta_char": {
+      "values": [
+        517,
+        523,
+        529,
+        535,
+        541,
+        547,
+        553,
+        559,
+        565
+      ]
+    },
+    "canary_sidebar": {
+      "values": [
+        250,
+        256,
+        262,
+        268,
+        274,
+        280,
+        286,
+        292,
+        298,
+        304
+      ]
+    },
+    "dense_card_min": {
+      "values": [
+        198,
+        202,
+        206,
+        210,
+        214,
+        218,
+        222,
+        226,
+        230,
+        234
+      ]
+    },
+    "promo_pad": {
+      "values": [
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45
+      ]
+    },
+    "rtl_inner": {
+      "values": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "tenant_gap": {
+      "values": [
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27
+      ]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "cards": [
+    {
+      "component_id": "card-01",
+      "title_chars": 45,
+      "body_chars": 199,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-02",
+      "title_chars": 21,
+      "body_chars": 82,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-03",
+      "title_chars": 19,
+      "body_chars": 208,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-04",
+      "title_chars": 36,
+      "body_chars": 88,
+      "meta_rows": 2
+    },
+    {
+      "component_id": "card-05",
+      "title_chars": 41,
+      "body_chars": 104,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-06",
+      "title_chars": 17,
+      "body_chars": 90,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-07",
+      "title_chars": 50,
+      "body_chars": 247,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-08",
+      "title_chars": 19,
+      "body_chars": 255,
+      "meta_rows": 2
+    },
+    {
+      "component_id": "card-09",
+      "title_chars": 23,
+      "body_chars": 155,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-10",
+      "title_chars": 30,
+      "body_chars": 184,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-11",
+      "title_chars": 49,
+      "body_chars": 113,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-12",
+      "title_chars": 36,
+      "body_chars": 95,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-13",
+      "title_chars": 18,
+      "body_chars": 213,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-14",
+      "title_chars": 23,
+      "body_chars": 102,
+      "meta_rows": 2
+    },
+    {
+      "component_id": "card-15",
+      "title_chars": 16,
+      "body_chars": 216,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-16",
+      "title_chars": 14,
+      "body_chars": 241,
+      "meta_rows": 2
+    },
+    {
+      "component_id": "card-17",
+      "title_chars": 53,
+      "body_chars": 303,
+      "meta_rows": 1
+    },
+    {
+      "component_id": "card-18",
+      "title_chars": 30,
+      "body_chars": 197,
+      "meta_rows": 1
+    }
+  ]
+}

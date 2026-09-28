@@ -1,0 +1,1 @@
+This attempt keeps the abandoned design-system defaults, trusts the surviving layer list, ignores the layered cascade and stylesheet history, and treats the flex trace as a single zero-sized line. It still writes every required object and probe so the verifier has to reject the shortcut on the recovered state and computed geometry rather than on a missing top-level field.

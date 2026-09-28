@@ -1,0 +1,186 @@
+{
+  "sessions": [
+    {
+      "session_id": "session-01",
+      "parent_session": null,
+      "fork_seq": null,
+      "base_context": {
+        "density": "specific",
+        "tenant": "none",
+        "mode": "normal",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "canary"
+      }
+    },
+    {
+      "session_id": "session-02",
+      "parent_session": "session-01",
+      "fork_seq": 42,
+      "base_context": {
+        "density": "normal",
+        "tenant": "b",
+        "mode": "normal",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-03",
+      "parent_session": "session-01",
+      "fork_seq": 24,
+      "base_context": {
+        "density": "normal",
+        "tenant": "none",
+        "mode": "normal",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-04",
+      "parent_session": "session-01",
+      "fork_seq": 48,
+      "base_context": {
+        "density": "normal",
+        "tenant": "order-b",
+        "mode": "normal",
+        "exp": "order-b",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-05",
+      "parent_session": "session-04",
+      "fork_seq": 42,
+      "base_context": {
+        "density": "normal",
+        "tenant": "a",
+        "mode": "promo",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-06",
+      "parent_session": "session-02",
+      "fork_seq": 42,
+      "base_context": {
+        "density": "dense",
+        "tenant": "none",
+        "mode": "normal",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-07",
+      "parent_session": "session-04",
+      "fork_seq": 18,
+      "base_context": {
+        "density": "normal",
+        "tenant": "order-b",
+        "mode": "normal",
+        "exp": "order-b",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-08",
+      "parent_session": "session-05",
+      "fork_seq": 30,
+      "base_context": {
+        "density": "normal",
+        "tenant": "none",
+        "mode": "normal",
+        "exp": "beta",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-09",
+      "parent_session": "session-07",
+      "fork_seq": 24,
+      "base_context": {
+        "density": "normal",
+        "tenant": "none",
+        "mode": "normal",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-10",
+      "parent_session": "session-06",
+      "fork_seq": 36,
+      "base_context": {
+        "density": "specific",
+        "tenant": "none",
+        "mode": "normal",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "canary"
+      }
+    },
+    {
+      "session_id": "session-11",
+      "parent_session": "session-09",
+      "fork_seq": 48,
+      "base_context": {
+        "density": "order-a",
+        "tenant": "none",
+        "mode": "normal",
+        "exp": "order-a",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-12",
+      "parent_session": "session-10",
+      "fork_seq": 30,
+      "base_context": {
+        "density": "normal",
+        "tenant": "none",
+        "mode": "normal",
+        "exp": "beta",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-13",
+      "parent_session": "session-11",
+      "fork_seq": 42,
+      "base_context": {
+        "density": "important",
+        "tenant": "important",
+        "mode": "normal",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    },
+    {
+      "session_id": "session-14",
+      "parent_session": "session-10",
+      "fork_seq": 36,
+      "base_context": {
+        "density": "normal",
+        "tenant": "a",
+        "mode": "promo",
+        "exp": "control",
+        "direction": "ltr",
+        "build": "stable"
+      }
+    }
+  ]
+}

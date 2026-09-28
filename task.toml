@@ -1,0 +1,30 @@
+artifacts = ["/app/output/layout_calibration.json"]
+
+[task]
+name = "afterquery/responsive-layout-calibration"
+
+[metadata]
+author_name = "Thomas Morison"
+author_email = "matiasv931026@gmail.com"
+difficulty_explanation = "This is a synthetic production-style reconstruction task modeled on work done by frontend platform and browser-layout engineers when a deployment has lost generated design-token state but retained telemetry, stylesheet records, and historical loader traces. The solver has to recover eleven responsive tokens, a seven-layer cascade order, six redacted values, replay 14 related stylesheet sessions with 480 mutations and transactional state, reproduce 112 current and 196 historical renders, and then apply that recovered state to 160 nested flex layouts containing 2,367 probed nodes. The flex stage depends on the earlier reconstruction rather than standing alone: it uses the source render's unrounded main width and character metric, then combines intrinsic sizing, percentage and auto bases, min/max clamps, wrapping, order-modified layout, grow/shrink freeze iterations, auto margins, justification, direction, row reversal, and recursive child groups. Fresh ablations on the shipped data show that replacing flex distribution with hypothetical sizes changes all 160 flow rows and 2,117 probes; disabling wrapping changes 143 rows and 1,909 probes; and ignoring item order changes 159 rows and 1,987 probes. For a human expert, the hard part is maintaining one consistent model across calibration, cascade, time-indexed stylesheet state, and exact layout arithmetic while debugging several plausible near-misses. For agents, the main challenge is the long dependency chain: shortcuts that solve an individual layer do not produce the final artifact, and small semantic mistakes propagate across many independent rows. All telemetry, DOM data, styles, histories, and flex traces are synthetic."
+solution_explanation = "The reference recovers the base tokens from partial telemetry, checks that each base value is pinned by the evidence, searches all 5,040 layer orders, recovers the six redacted values from cascade measurements, and replays the stylesheet-session history with fork inheritance and transactional batches. Each flow trace is then resolved back to its recovered render state. The nested flex implementation computes intrinsic min/max contributions recursively, collects lines in order-modified sequence, applies the grow/shrink freeze loop with scaled shrink factors and min/max clamping, allocates auto margins and justify-content space, maps logical positions through direction and row-reverse, and recursively lays out child groups. Flex geometry is carried as exact rational values, so the documented half-up device-pixel rule is applied to the mathematical value rather than to a nearby binary floating-point approximation. Every prediction is derived from the shipped evidence; the solver contains no per-flow answer table or hidden geometry constants."
+verification_explanation = "The verifier only parses `/app/output/layout_calibration.json`; it never imports or executes agent-produced code. Exact checks cover the eleven base tokens, seven-layer order, six recovered override values, 112 ordinary renders, 196 historical renders, all 160 flow rows, and all 2,367 requested node probes. The expected flex geometry is generated with exact rational arithmetic before applying the documented half-up device-pixel rule, including the exact .5-device-pixel boundary cases. Fresh measurements against the shipped data show that replacing flex distribution with hypothetical-size placement is wrong on 160/160 flow rows and 2,117 probes; disabling wrapping is wrong on 143 rows and 1,909 probes; ignoring item `order` is wrong on 159 rows and 1,987 probes; and feeding the flex stage the already-painted main width instead of the unrounded CSS width is wrong on 38 rows and 142 probes. The schema-valid defaults/no-cascade/no-flex attempt scores 0. Missing or duplicate IDs, malformed types, incomplete recovery objects, or any wrong recovered value or prediction also score 0."
+category = "Software"
+subcategory = "Frontend"
+tags = ["frontend", "responsive-layout", "css-cascade", "flexbox", "design-tokens", "container-queries", "render-telemetry", "calibration"]
+expert_time_estimate_hours = 7.0
+relevant_experience = "Frontend platform or browser-layout engineering experience with CSS cascade layers, custom properties, responsive/container-query behavior, Flexbox sizing and line layout, layout geometry, and browser render telemetry is directly relevant."
+
+[verifier]
+environment_mode = "separate"
+timeout_sec = 120
+
+[agent]
+timeout_sec = 7200
+
+[environment]
+build_timeout_sec = 600
+cpus = 2
+memory_mb = 2048
+storage_mb = 4096
+gpus = 0

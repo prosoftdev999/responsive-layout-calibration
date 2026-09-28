@@ -1,0 +1,317 @@
+{
+  "sheets": [
+    {
+      "sheet_id": "hotfix-01",
+      "layer": "shell",
+      "declarations": [
+        {
+          "property": "--grid_gap",
+          "value": 11,
+          "important": true
+        },
+        {
+          "property": "--card_min",
+          "value": 260,
+          "important": false
+        },
+        {
+          "property": "--sidebar_width",
+          "value": 296,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-02",
+      "layer": "experiment",
+      "declarations": [
+        {
+          "property": "--card_min",
+          "value": 252,
+          "important": false
+        },
+        {
+          "property": "--content_cap",
+          "value": 1320,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-03",
+      "layer": "theme",
+      "declarations": [
+        {
+          "property": "--card_inner_pad",
+          "value": 9,
+          "important": false
+        },
+        {
+          "property": "--char_factor_milli",
+          "value": 583,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-04",
+      "layer": "component",
+      "declarations": [
+        {
+          "property": "--compact_pad",
+          "value": 9,
+          "important": false
+        },
+        {
+          "property": "--wide_pad",
+          "value": 27,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-05",
+      "layer": "foundation",
+      "declarations": [
+        {
+          "property": "--card_inner_pad",
+          "value": 11,
+          "important": false
+        },
+        {
+          "property": "--wide_pad",
+          "value": 27,
+          "important": true
+        },
+        {
+          "property": "--sidebar_width",
+          "value": 250,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-06",
+      "layer": "density",
+      "declarations": [
+        {
+          "property": "--standard_pad",
+          "value": 19,
+          "important": true
+        },
+        {
+          "property": "--content_cap",
+          "value": 1188,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-07",
+      "layer": "override",
+      "declarations": [
+        {
+          "property": "--grid_gap",
+          "value": 13,
+          "important": false
+        },
+        {
+          "property": "--card_min",
+          "value": 260,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-08",
+      "layer": "shell",
+      "declarations": [
+        {
+          "property": "--char_factor_milli",
+          "value": 583,
+          "important": false
+        },
+        {
+          "property": "--wide_breakpoint",
+          "value": 1082,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-09",
+      "layer": "experiment",
+      "declarations": [
+        {
+          "property": "--content_cap",
+          "value": 1288,
+          "important": false
+        },
+        {
+          "property": "--card_inner_pad",
+          "value": 9,
+          "important": false
+        },
+        {
+          "property": "--sidebar_width",
+          "value": 296,
+          "important": true
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-10",
+      "layer": "theme",
+      "declarations": [
+        {
+          "property": "--grid_gap",
+          "value": 15,
+          "important": false
+        },
+        {
+          "property": "--compact_pad",
+          "value": 22,
+          "important": true
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-11",
+      "layer": "component",
+      "declarations": [
+        {
+          "property": "--card_inner_pad",
+          "value": 22,
+          "important": true
+        },
+        {
+          "property": "--char_factor_milli",
+          "value": 517,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-12",
+      "layer": "foundation",
+      "declarations": [
+        {
+          "property": "--standard_breakpoint",
+          "value": 773,
+          "important": false
+        },
+        {
+          "property": "--wide_breakpoint",
+          "value": 1109,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-13",
+      "layer": "density",
+      "declarations": [
+        {
+          "property": "--wide_breakpoint",
+          "value": 1201,
+          "important": false
+        },
+        {
+          "property": "--card_min",
+          "value": 194,
+          "important": false
+        },
+        {
+          "property": "--compact_pad",
+          "value": 24,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-14",
+      "layer": "override",
+      "declarations": [
+        {
+          "property": "--content_cap",
+          "value": 1320,
+          "important": false
+        },
+        {
+          "property": "--standard_pad",
+          "value": 21,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-15",
+      "layer": "shell",
+      "declarations": [
+        {
+          "property": "--char_factor_milli",
+          "value": 567,
+          "important": false
+        },
+        {
+          "property": "--wide_pad",
+          "value": 42,
+          "important": true
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-16",
+      "layer": "experiment",
+      "declarations": [
+        {
+          "property": "--wide_pad",
+          "value": 40,
+          "important": true
+        },
+        {
+          "property": "--char_factor_milli",
+          "value": 567,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-17",
+      "layer": "theme",
+      "declarations": [
+        {
+          "property": "--card_inner_pad",
+          "value": 22,
+          "important": false
+        },
+        {
+          "property": "--sidebar_width",
+          "value": 234,
+          "important": false
+        },
+        {
+          "property": "--card_min",
+          "value": 210,
+          "important": false
+        }
+      ]
+    },
+    {
+      "sheet_id": "hotfix-18",
+      "layer": "component",
+      "declarations": [
+        {
+          "property": "--standard_breakpoint",
+          "value": 789,
+          "important": false
+        },
+        {
+          "property": "--wide_pad",
+          "value": 40,
+          "important": false
+        }
+      ]
+    }
+  ]
+}
